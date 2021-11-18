@@ -2,24 +2,24 @@ sftp:
   config:
     remoteDirectory: /in/statements/
     localDirectory: tmp/
-    host: 192.168.0.24
+    host: sftp
     user: tester
     password: password
     port: 22
 
 spring:
   kafka:
-    bootstrap-servers: http://localhost:9092
+    bootstrap-servers: http://broker:9092
     consumer:
       group-id: FIRST_GROUP
 
 schema:
   registry:
-    url: http://localhost:8081
+    url: http://schema-registry:8081
 
 s3:
   config:
-    url: http://localhost:4566
+    url: http://localstack:4566
     region: south-east-1
     access-key-id: test
     secret-key-id: test
@@ -30,4 +30,4 @@ application:
       integration-code: ECS-BANK
       process: STATEMENTS
       validation-required: true
-      topic: STATEMENTS-ROUTER
+      topic: Transformation1
