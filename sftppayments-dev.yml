@@ -20,7 +20,7 @@ schema:
 s3:
   config:
     url: http://localhost:4566
-    region: north-east-1
+    region: south-east-1
     access-key-id: test
     secret-key-id: test
 
