@@ -1,6 +1,6 @@
 sftp:
   config:
-    remoteDirectory: /home/tester/upload/in/statements
+    remoteDirectory: /upload/in/statements
     localDirectory: tmp/
     host: sftp
     user: tester
