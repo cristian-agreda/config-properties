@@ -27,7 +27,7 @@ s3:
 application:
   config:
     reader:
-      integration-code: ecs-bank
+      integration-code: ecs
       process: STATEMENTS
       validation-required: true
       topic: Transformation1
